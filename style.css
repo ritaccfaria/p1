@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* CSS Document */
+/* RitaFaria 2021 */
+
+
+@font-face {
+  font-family: "Exquise";
+  src: url("fonts/Exquise.ttf") format("truetype");	
+}
+
+@font-face {
+  font-family: "Roslindale";
+  src: url("fonts/Roslindale-Variable.ttf") format("truetype-variations");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: "Trilby";
+  src: url("fonts/Trilby-Variable.ttf") format("truetype-variations");
+  font-weight: 1 999;	
+}
+
+@font-face {
+  font-family: "BluuSuuperstar";
+  src: url("fonts/BluuSuuperstar-Variable.ttf") format("truetype-variations");
+  font-weight: 1 999;	
+}
+
+@font-face {
+  font-family: "Vesterbro";
+  src: url("fonts/Vesterbro-Variable-Italic.ttf") format("truetype-variations");
+  font-weight: 1 999;	
+}
+
+@font-face {
+	font-family: "Cheee";
+	src: url("fonts/Cheee-Variable.ttf") format("truetype-variations");
+	font-variation-settings:
+    "yest" 0 1000,
+    "grvt" 0 1000;
+}
+
+@font-face {
+  	font-family: "Slovic";
+  	src: url("fonts/Slovic-Variable.ttf") format("truetype-variations");
+  	font-variation-settings:
+  	"STLE" 10 80;
+}
+
+@font-face {
+  font-family: "Fit";
+  src: url("fonts/Fit-Variable.ttf") format("truetype-variations");
+  font-stretch: 30% 200%;	
+}
+
+
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+
+header img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-top: 4.5vh;
+	padding-bottom: 1.5vh;
+	height: 8vh;
+	cursor: pointer;
+}
+
+
+
+/* classes modo */
+.dark {
+	background-color: #1911D9;
+	}
+
+.light {
+	background-color: white;
+	}
+
+
+/* PRIVACY */
+.privacy {
+	display: block;
+	cursor: default;
+}
+
+.privacy h1{
+	font-family: Trilby, serif;
+	font-weight: 100;
+	font-size: 3vw;
+	color: white;
+	padding: 2rem;
+	width: 10rem;
+	position: absolute;
+	left: 20vw;
+	top: 50vh;
+	opacity: 1;
+	transition: opacity 0.3s linear;
+}
+
+
+
+/* TRANSPARENCY */
+.transp {
+	display: none;
+}
+
+/* caixas de texto */
+.marquee{
+	 display: flex;
+	 position: relative;
+	 width: 100%;	 
+	 margin: auto;
+	 overflow: hidden;
+	 z-index: 1;
+}
+ 
+ .marquee article {
+	 display: flex;
+	 animation: scrollText 10s infinite linear;
+	 color: #1911D9;
+	 cursor: default;
+}
+
+.marquee p {
+	 margin: 0;
+	 color: #1911D9;
+	 cursor: default;
+}
+
+
+/* linha texto 1 */
+#line1 article {
+	margin: 0 0 -4.5vh;
+	color: #0D0D0D;
+}
+
+.line1normal {
+	font-size: 15vh;
+	font-family: 'Vesterbro', serif;
+  	font-weight: 100;
+}
+
+.line1weight {
+	font-weight: 999;
+}
+
+#line1 p {
+	font-size: 10.5vh;
+	padding: 0 1vw 0 1.9vw;
+	font-family: "Vesterbro", "serif";
+  	font-weight: 100;
+}
+
+
+/* linha texto 2 */
+#line2 article {
+	margin: -5vh 0 -3vh -20vw;
+}
+
+.line2normal {
+	font-size: 25vh;
+	font-family: 'Cheee', "sans-serif";
+  	font-variation-settings: "yest" 100, "grvt" 0;
+}
+
+.line2after {
+	font-variation-settings: "yest" 450, "grvt" 900;
+}
+
+#line2 p {
+	font-family: Cambria, Times, "serif";
+	font-weight: 900;
+	font-size: 17vh;
+	padding: 8vh 1vw 0 0.5vw;
+	color: #0D0D0D;
+}
+
+
+/* linha texto 3 */
+#line3 article {
+	margin: -6vh 0 -0.5vh -30vw;
+	color: #0D0D0D;
+}
+
+.line3normal {
+	font-size: 20vh;
+	font-family: "Slovic", "serif";
+	font-variation-settings: "STLE" 10;
+}
+
+.line3after {
+	font-variation-settings: "STLE" 80;
+}
+
+#line3 p {
+	font-family: Helvetica, Arial, "sans-serif";
+	font-weight: 500;
+	font-size: 17vh;
+	padding: 3.7vh 1.5vw 0 2vw;
+}
+
+
+/* linha texto 4 */
+#line4 article {
+	margin: -5vh 0 -2vh -5vw;
+}
+
+.line4normal {
+	font-size: 40vh;
+	font-family: 'Fit', sans-serif;
+  	font-stretch: 100%;
+}
+
+.line4after {
+	font-stretch: 200%;
+}
+
+#line4 p {
+	font-family: Helvetica, Arial, "sans-serif";
+	font-weight: 900;
+	font-size: 20vh;
+	padding: 8vh 1vw 0 1vw;
+	color: #0D0D0D;
+}
+
+
+/* animação scroll texto */
+ @keyframes scrollText {
+	 from {
+		 transform: translateX(0%);
+	}
+	 to {
+		 transform: translateX(-33.333%);
+	}
+}
